@@ -1,0 +1,77 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* App Container */
+.App {
+  text-align: center;
+  background: linear-gradient(to right, #ff758c, #ff7eb3); /* Gradient background */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Logo Animation */
+.App-logo {
+  height: 100px;
+  animation: App-logo-bounce 2s infinite alternate ease-in-out;
+}
+
+/* Bounce Animation */
+@keyframes App-logo-bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Header Styling */
+.App-header {
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Links Styling */
+.App-link {
+  color: #ff5e78;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.App-link:hover {
+  color: white;
+  background: #ff5e78;
+  box-shadow: 0px 5px 15px rgba(255, 94, 120, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App-header {
+    font-size: 1.5rem;
+    padding: 15px;
+  }
+
+  .App-logo {
+    height: 80px;
+  }
+}

@@ -1,0 +1,153 @@
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  color: #333;
+}
+
+/* Section Styling */
+section {
+  padding: 50px;
+  min-height: 100vh;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-in-out;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  margin: 20px;
+}
+
+/* Animation when section appears */
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Hero Section */
+.hero {
+  padding: 40px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hero:hover {
+  background: rgba(0, 0, 0, 0.85);
+  transition: all 0.4s ease-in-out;
+}
+
+/* Education & Skills */
+.education, .skills {
+  margin-top: 30px;
+  text-align: left;
+}
+
+/* Education & Skills Items */
+.edu-item, .skill-category {
+  margin-bottom: 15px;
+  padding: 15px;
+  background: #ffecd2;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.edu-item:hover, .skill-category:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 5px 15px rgba(255, 94, 120, 0.5);
+}
+
+/* Headings */
+h1, h2 {
+  color: #333;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #444;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* About Section */
+.about {
+  padding: 30px;
+  text-align: center;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about:hover {
+  background: #f3f3f3;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Links */
+a {
+  color: #ff5e78;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #ff305b;
+}
+
+/* Lists */
+ul {
+  text-align: left;
+  display: inline-block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  section {
+    padding: 30px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .hero {
+    padding: 25px;
+  }
+
+  .edu-item, .skill-category {
+    padding: 10px;
+  }
+}
