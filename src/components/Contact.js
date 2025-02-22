@@ -41,7 +41,7 @@ const Contact = () => {
           <FaGithub className="contact-icon" />
           <h3>GitHub</h3>
           <p>
-            <a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/pratyush71" target="_blank" rel="noopener noreferrer">
               View My Projects
             </a>
           </p>
